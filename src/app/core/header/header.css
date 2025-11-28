@@ -1,0 +1,28 @@
+:host {
+  --app-header-background-color: var(--app-color-background);
+
+  --app-header-text-color: var(--app-color-purple-90);
+
+  --app-header-padding: var(--app-spacing-md);
+  --app-header-margin: var(--app-spacing-0);
+  --app-header-z-index: 300;
+
+  --app-header-filter: drop-shadow(0 20px 25px rgb(0, 0, 0));
+}
+
+.header {
+  background-color: var(--app-header-background-color);
+  margin: var(--app-header-margin);
+  padding: var(--app-header-padding);
+  z-index: var(--app-header-z-index);
+  filter: var(--app-header-filter);
+  position: relative;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

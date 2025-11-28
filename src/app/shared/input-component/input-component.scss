@@ -1,0 +1,42 @@
+@import 'variables.css';
+@import 'variants.css';
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100%;
+  box-sizing: border-box;
+  margin: var(--app-input-component-margin);
+  padding: var(--app-input-component-padding);
+  background-color: var(--app-input-component-background-color);
+  border-radius: var(--app-input-component-border-radius);
+  gap: var(--app-input-component-gap);
+  transition: var(--app-input-transition);
+  form {
+    inline-size: 100%;
+    textarea {
+      color: var(--app-input-component-text-color);
+      inline-size: 100%;
+      box-sizing: border-box;
+      padding: var(--app-input-component-padding);
+      background-color: var(--app-input-component-background-color);
+      border-radius: var(--app-input-component-border-radius);
+      height: var(--app-block-size);
+      max-height: 100px;
+      resize: none;
+      overflow-y: hidden;
+      transition: var(--app-input-transition);
+      border: 1px solid var(--app-border-color);
+      &:is(:focus, :active, :not(:placeholder-shown)) {
+        --app-block-size: var(--app-block-size-focus);
+        --app-border-color: var(--app-border-color-focus);
+      }
+    }
+  }
+}
+.input-area-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--app-input-component-gap);
+}

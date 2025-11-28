@@ -1,0 +1,24 @@
+:host {
+  --app-button-background-color: transparent;
+  --app-button-text-color: var(--app-color-gray-110);
+  --app-button-text-color-hover: var(--app-color-gray-10);
+  --app-button-border-color: var(--app-color-orange-100);
+  --app-button-border-radius: var(--app-radius-sm);
+  --app-button-font-size: var(--app-font-size);
+  --app-button-font-weight: var(--app-font-weight-medium);
+  --app-button-font-family: var(--app-font-family);
+  --app-button-cursor: pointer;
+  --app-button-transition: all 0.2s ease, transform 0.1s ease;
+  --app-button-background-color-hover: var(--app-color-orange-90);
+  --app-button-background-color-disabled: var(--app-color-orange-30);
+
+  --app-button-padding: 0.4rem;
+  --app-button-margin: var(--app-spacing-0);
+  --app-button-border: none;
+  --app-button-inline-size: fit-content;
+  --app-button-text-align: center;
+
+  --app-button-blur: none;
+
+  --app-button-icon-size: 30px;
+}

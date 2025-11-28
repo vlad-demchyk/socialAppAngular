@@ -1,0 +1,13 @@
+<!-- if user is logged in -->
+
+<header class="header">
+  <div class="header-container">
+    <app-button text="Notifications" dataType="notifications"></app-button>
+    <app-button [text]="title" dataType="logoGoHome">
+      {{ title }}
+    </app-button>
+    <app-button text="Burger Menu" dataType="burger-menu"></app-button>
+  </div>
+</header>
+
+<!-- if user is not logged in -->

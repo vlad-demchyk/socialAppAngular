@@ -1,0 +1,22 @@
+:host {
+  --app-home-margin: var(--app-spacing-0) auto;
+
+  padding: var(--app-page-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--app-spacing-xl);
+  box-sizing: border-box;
+  height: 100%;
+
+  overflow: auto;
+}
+
+section.posts {
+  display: grid;
+  gap: var(--app-spacing-xl);
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+}
+
+:host.modal-open {
+  overflow: hidden;
+}

@@ -1,0 +1,14 @@
+<div class="comments">
+  <div class="comment-form">
+    <app-input-component placeholder="Add a comment"></app-input-component>
+  </div>
+  <div class="comment" *ngFor="let comment of comments">
+    <app-profile-card class="small" [user]="comment">
+      <p>{{ comment?.text }}</p>
+    </app-profile-card>
+    <div class="comment-footer">
+      <app-button text="Like" dataType="like" (click)="likeComment(comment.id)"></app-button>
+      <app-button text="Reply" dataType="reply" (click)="replyToComment(comment.id)"></app-button>
+    </div>
+  </div>
+</div>

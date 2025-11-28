@@ -1,0 +1,11 @@
+:root {
+    --app-radius-0: 0;
+    --app-radius-xxs: 0.25rem;
+    --app-radius-xs: 0.5rem;
+    --app-radius-sm: 0.75rem;
+    --app-radius-md: 1rem;
+    --app-radius-lg: 1.25rem;
+    --app-radius-xl: 1.5rem;
+    --app-radius-xxl: 1.75rem;
+    --app-radius-round: 100%;
+}

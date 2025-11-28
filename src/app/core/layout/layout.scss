@@ -1,0 +1,27 @@
+:host {
+  --app-layout-background-color: var(--app-color-background);
+  --app-layout-text-color: var(--app-color-text);
+  --app-layout-margin: var(--app-spacing-0);
+
+  --app-page-padding-inline: var(--app-spacing-xl);
+  --app-page-padding-block: var(--app-spacing-xxl);
+
+  --app-page-padding: var(--app-page-padding-block) var(--app-page-padding-inline)
+    calc(var(--app-page-padding-block) * 3) var(--app-page-padding-inline);
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100vh;
+
+  .main-content {
+    box-sizing: border-box;
+    margin: var(--app-layout-margin);
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--app-layout-background-color);
+    color: var(--app-layout-text-color);
+    position: relative;
+  }
+}

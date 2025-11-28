@@ -1,0 +1,48 @@
+@import 'variables.css';
+@import 'variants.css';
+
+:host {
+  margin-inline: var(--app-button-margin);
+  display: inline-block;
+  inline-size: var(--app-button-inline-size);
+}
+
+:where(.btn) {
+  background: var(--app-button-background-color);
+  backdrop-filter: var(--app-button-blur);
+  box-sizing: border-box;
+  text-align: var(--app-button-text-align);
+  inline-size: var(--app-button-inline-size);
+  color: var(--app-button-text-color);
+  border: var(--app-button-border);
+  padding: var(--app-button-padding);
+  font-family: var(--app-button-font-family);
+  font-size: var(--app-button-font-size);
+  font-weight: var(--app-button-font-weight);
+  border-radius: var(--app-button-border-radius);
+  cursor: var(--app-button-cursor);
+  transition: var(--app-button-transition);
+
+  &:hover {
+    img {
+      scale: 1.2;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:disabled {
+    background: var(--app-button-background-color-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  img {
+    inline-size: var(--app-button-inline-size);
+    block-size: var(--app-button-icon-size);
+    object-fit: contain;
+    object-position: center;
+    transition: var(--app-button-transition);
+  }
+}

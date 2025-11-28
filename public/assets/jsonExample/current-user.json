@@ -1,0 +1,112 @@
+{
+  "userId": 1,
+  "userName": "Alessandro Petrucci",
+  "nickName": "user_12345_alessandro",
+  "profilePhoto": "https://i.pravatar.cc/150?img=1",
+  "email": "alessandro.petrucci@example.com",
+  "friends": [
+    {
+      "userId": 2,
+      "userName": "Maria Romano",
+      "uniqueId": "user_23456_maria",
+      "profilePhoto": "https://i.pravatar.cc/150?img=2",
+      "status": "online"
+    },
+    {
+      "userId": 3,
+      "userName": "Domenico Bianchi",
+      "uniqueId": "user_34567_domenico",
+      "profilePhoto": "https://i.pravatar.cc/150?img=3",
+      "status": "offline"
+    },
+    {
+      "userId": 4,
+      "userName": "Anna Rossi",
+      "uniqueId": "user_45678_anna",
+      "profilePhoto": "https://i.pravatar.cc/150?img=4",
+      "status": "online"
+    },
+    {
+      "userId": 5,
+      "userName": "Vittorio Ferrari",
+      "uniqueId": "user_56789_vittorio",
+      "profilePhoto": "https://i.pravatar.cc/150?img=5",
+      "status": "away"
+    },
+    {
+      "userId": 6,
+      "userName": "Elena Conti",
+      "uniqueId": "user_67890_elena",
+      "profilePhoto": "https://i.pravatar.cc/150?img=6",
+      "status": "online"
+    },
+    {
+      "userId": 7,
+      "userName": "Igor Marini",
+      "uniqueId": "user_78901_igor",
+      "profilePhoto": "https://i.pravatar.cc/150?img=7",
+      "status": "offline"
+    },
+    {
+      "userId": 8,
+      "userName": "Natalia Galli",
+      "uniqueId": "user_89012_natalia",
+      "profilePhoto": "https://i.pravatar.cc/150?img=8",
+      "status": "online"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Club degli Amanti delle Feste",
+      "uniqueId": "group_001_party_lovers",
+      "description": "Gruppo per chi ama feste di qualità e buona musica",
+      "membersCount": 245,
+      "groupPhoto": "https://i.pravatar.cc/300?img=10",
+      "isAdmin": false,
+      "lastActivity": "2024-01-15T20:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Eventi Musicali di Roma",
+      "uniqueId": "group_002_roma_music",
+      "description": "Tutti gli eventi musicali e i concerti a Roma",
+      "membersCount": 1890,
+      "groupPhoto": "https://i.pravatar.cc/300?img=11",
+      "isAdmin": false,
+      "lastActivity": "2024-01-15T18:30:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Vita Notturna della Capitale",
+      "uniqueId": "group_003_nightlife",
+      "description": "Discoteche, bar e feste a Roma",
+      "membersCount": 567,
+      "groupPhoto": "https://i.pravatar.cc/300?img=12",
+      "isAdmin": true,
+      "lastActivity": "2024-01-15T19:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "DJ e Musica Elettronica",
+      "uniqueId": "group_004_dj_electronic",
+      "description": "Comunità di amanti della musica elettronica e dei DJ",
+      "membersCount": 892,
+      "groupPhoto": "https://i.pravatar.cc/300?img=13",
+      "isAdmin": false,
+      "lastActivity": "2024-01-15T17:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Danza e Movimento",
+      "uniqueId": "group_005_dance_movement",
+      "description": "Tutto su danza, movimento e stile di vita attivo",
+      "membersCount": 423,
+      "groupPhoto": "https://i.pravatar.cc/300?img=14",
+      "isAdmin": false,
+      "lastActivity": "2024-01-14T22:00:00Z"
+    }
+  ],
+  "notificationsEnabled": true,
+  "realTimeUpdatesEnabled": true
+}

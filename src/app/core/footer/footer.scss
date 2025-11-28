@@ -1,0 +1,44 @@
+:host {
+  --app-footer-background-color: var(--app-color-gray-50);
+  --app-footer-text-color: var(--app-color-gray-90);
+  --app-footer-padding: var(--app-spacing-md) var(--app-spacing-xs);
+  --app-footer-filter: drop-shadow(0 -44px 30px rgb(0, 0, 0));
+}
+
+.footer {
+  inline-size: 100vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.actions {
+  box-sizing: border-box;
+  padding: var(--app-footer-padding);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  inline-size: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  align-items: end;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  z-index: 100;
+}
+
+menu {
+  background-color: var(--app-footer-background-color);
+  margin: 0;
+  padding: var(--app-footer-padding);
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  filter: var(--app-footer-filter);
+}

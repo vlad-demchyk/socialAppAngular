@@ -1,0 +1,21 @@
+@import 'styles/main.css';
+
+/* Global styles and tokens*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--app-font-family);
+  font-size: var(--app-font-size);
+  font-weight: var(--app-font-weight);
+
+  color: var(--app-color-text);
+  background-color: var(--app-color-background);
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+  overscroll-behavior-y: contain;
+}

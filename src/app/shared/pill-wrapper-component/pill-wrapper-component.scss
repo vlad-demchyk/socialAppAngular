@@ -1,0 +1,25 @@
+:host {
+  --app-pill-blur: blur(3px);
+  --app-pill-border: 1px solid var(--app-color-gray-70);
+  --app-pill-padding: var(--app-spacing-xxs) var(--app-spacing-md);
+  --app-pill-background-color: var(--app-background-gradient-gray);
+  --app-pill-text-align: start;
+  --app-pill-inline-size: fit-content;
+  --app-pill-font-family: var(--app-font-family-monospace);
+  --app-pill-border-radius: var(--app-radius-sm);
+  --app-pill-font-size: var(--app-font-size-md);
+
+  backdrop-filter: var(--app-pill-blur);
+  margin: 0;
+  border: var(--app-pill-border);
+  padding: var(--app-pill-padding);
+  background: var(--app-pill-background-color);
+  text-align: var(--app-pill-text-align);
+  inline-size: var(--app-pill-inline-size);
+  font-family: var(--app-pill-font-family);
+  border-radius: var(--app-pill-border-radius);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--app-pill-font-size);
+  overflow: hidden;
+}

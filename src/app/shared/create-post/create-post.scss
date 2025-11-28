@@ -1,0 +1,45 @@
+:host {
+  --app-create-post-background-color: var(--app-color-gray-30);
+  --app-create-post-border-radius: var(--app-radius-md);
+  --app-create-post-padding: var(--app-spacing-lg);
+  --app-create-post-box-shadow: var(--app-shadow-md);
+  --app-create-post-transition: all 0.3s ease-in-out;
+
+  position: absolute;
+
+  inline-size: 100%;
+  block-size: 100%;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+
+  transition: var(--app-create-post-transition), visibility 0s 0.3s;
+
+  z-index: 200;
+  background-color: var(--app-create-post-background-color);
+
+  visibility: hidden;
+  box-sizing: border-box;
+}
+
+:host([active='true']) {
+  transform: translateY(0);
+  visibility: visible;
+  transition: var(--app-create-post-transition);
+}
+
+.modal-window {
+  padding: var(--app-create-post-padding);
+  block-size: 100%;
+  inline-size: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--app-spacing-lg);
+  header {
+    display: flex;
+    gap: var(--app-spacing-md);
+  }
+}

@@ -1,0 +1,6 @@
+@import 'variables.css';
+
+app-input-component :host {
+  grid-row: var(--app-profile-card-ng-grid-row-position);
+  grid-column: var(--app-profile-card-ng-grid-column-position);
+}

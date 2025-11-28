@@ -1,0 +1,9 @@
+/* :root {
+    --app-outline-color: var(--app-color-orange-100);
+    --app-outline-offset: 2px;
+}
+:where(:has(*:focus, :focus-visible)) {
+    
+    outline: 2px solid var(--app-outline-color);
+    outline-offset: var(--app-outline-offset);
+} */

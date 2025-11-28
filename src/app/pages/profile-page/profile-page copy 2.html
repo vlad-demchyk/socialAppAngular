@@ -1,0 +1,88 @@
+@if (profile) {
+<section class="content">
+  <pill-wrapper>
+    {{ profile.nickName }}
+  </pill-wrapper>
+  <header>
+    <img [src]="profile.profilePhoto" alt="photo by user's profile" />
+    <span>
+      <p>{{ profile.userName }}</p>
+
+      <p>{{ profile.city }}, {{ profile.country }}</p>
+    </span>
+  </header>
+  <main [class.active]="modalAboutActive$ | async">
+    <span aboutme>
+      <h6>about me:</h6>
+      <pill-wrapper
+        (click)="this.aboutModalService.toggle()"
+        [class.showless]="!(modalAboutActive$ | async)"
+      >
+        {{ profile.bio }}
+      </pill-wrapper>
+    </span>
+    <app-button
+      (click)="this.aboutModalService.toggle()"
+      [text]="(modalAboutActive$ | async) ? 'Show less' : 'Show more'"
+      dataType="showMore"
+    ></app-button>
+    @if (modalAboutActive$ | async) {
+    <span contacts>
+      <h6>contacts:</h6>
+      <pill-wrapper>{{ profile.email }}, {{ profile.phone }}</pill-wrapper>
+    </span>
+    <span hobbies>
+      <h6>hobbies:</h6>
+      @for (hobby of profile.hobbies; track $index) {
+      <pill-wrapper>{{ hobby.name }}</pill-wrapper>
+      }
+    </span>
+    <span work>
+      <h6>work:</h6>
+      <pill-wrapper>
+        {{ profile.work.position }}, {{ profile.work.company }}, {{ profile.work.location }}
+      </pill-wrapper>
+    </span>
+    <span education>
+      <h6>education:</h6>
+      <pill-wrapper>
+        {{ profile.education.faculty }}, {{ profile.education.university }},
+        {{ profile.education.graduationYear }}
+      </pill-wrapper>
+    </span>
+
+    <span interests>
+      <h6>interests:</h6>
+      @for (item of profile.interests; track $index) {
+      <pill-wrapper>{{ item }}</pill-wrapper>
+      }
+    </span>
+
+    <span favoriteMusic>
+      <h6>favorite Music:</h6>
+      @for (favoriteMusic of profile.favoriteMusic; track $index) {
+      <pill-wrapper>{{ favoriteMusic }}</pill-wrapper>
+      }
+    </span>
+
+    <span favoritePlace>
+      <h6>favorite Place:</h6>
+      @for (favoritePlace of profile.favoritePlaces; track $index) {
+      <pill-wrapper>{{ favoritePlace.name }}</pill-wrapper>
+      }
+    </span>
+    }
+  </main>
+  <footer>
+    <app-button text="Posts"></app-button>
+    <app-button text="Gallery"></app-button>
+    <div gallery>
+      @for (photo of profile.photos; track photo.id) {
+      <img [src]="photo.url" alt="" />
+      }
+    </div>
+  </footer>
+</section>
+} @else {
+<span>User's not found</span>
+}

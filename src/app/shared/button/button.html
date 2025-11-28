@@ -1,0 +1,13 @@
+<button
+  class="btn"
+  aria-label="{{ text }}"
+  [type]="dataType === 'submit' ? 'submit' : 'button'"
+  [attr.data-type]="dataType"
+  (click)="onClick()"
+>
+  @if (iconUrl) {
+  <img class="btn-icon" [src]="iconUrl" [alt]="dataType + ' icon'" />
+  } @else {
+  {{ text }}
+  }
+</button>

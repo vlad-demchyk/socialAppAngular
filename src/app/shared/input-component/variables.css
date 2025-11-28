@@ -1,0 +1,16 @@
+:host {
+    --app-input-component-background-color: var(--app-color-gray-10);
+    --app-input-component-border-radius: var(--app-radius-md);
+    --app-input-component-padding: var(--app-spacing-md);
+    --app-input-component-margin: var(--app-spacing-0);
+  
+    --app-input-transition: all 0.2s ease, transform 0.1s ease;
+  
+    --app-block-size: calc(var(--app-font-size) + var(--app-input-component-padding) * 2);
+    --app-block-size-focus: calc(
+      var(--app-block-size) + 100px
+    );
+  --app-input-component-gap: var(--app-spacing-sm);
+    --app-border-color: var(--app-color-gray-100);
+    --app-border-color-focus: var(--app-color-orange-100);
+  }

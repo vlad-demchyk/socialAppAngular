@@ -1,0 +1,9 @@
+<div class="profile-card">
+  <img
+    (click)="openProfile()"
+    [src]="user?.profilePhoto || 'assets/images/user-icon-default.webp'"
+    alt="Profile Photo"
+  />
+  <h6>{{ user?.userName }}</h6>
+  <ng-content></ng-content>
+</div>

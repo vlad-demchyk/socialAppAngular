@@ -1,0 +1,48 @@
+:host {
+  --app-comments-background-color: var(--app-color-gray-50);
+  --app-comments-padding: var(--app-spacing-lg);
+  --app-comments-border-radius: var(--app-radius-md);
+  --app-comments-margin: var(--app-spacing-0);
+  --app-comments-spacing: var(--app-spacing-md);
+
+  
+  --app-comment-padding-inline-start: var(--app-spacing-xs);
+}
+
+.comments {
+  display: grid;
+  gap: var(--app-spacing-md);
+  //   grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
+
+  box-sizing: border-box;
+  inline-size: 100%;
+  border-radius: var(--app-comments-border-radius);
+  margin: var(--app-comments-margin);
+  background-color: var(--app-comments-background-color);
+  padding: var(--app-comments-padding);
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    gap: var(--app-spacing-xs);
+
+    p {
+      letter-spacing: 1.3px;
+      padding-inline-start: var(--app-comment-padding-inline-start);
+      --app-font-size: var(--app-font-size-xs);
+    }
+
+    app-profile-card p {
+      grid-row: var(--app-profile-card-ng-grid-row-position);
+      grid-column: var(--app-profile-card-ng-grid-column-position);
+      --app-comment-padding-inline-start: 0;
+    }
+
+    .comment-footer {
+      display: flex;
+      justify-content: flex-start;
+      gap: var(--app-comments-spacing);
+      align-items: center;
+    }
+  }
+}

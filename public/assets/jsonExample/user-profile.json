@@ -1,0 +1,141 @@
+{
+  "userId": 1,
+  "nickName": "user_12345_alessandro",
+  "userName": "Alessandro Petrucci",
+  "profilePhoto": "https://i.pravatar.cc/150?img=1",
+  "coverPhoto": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&h=400&fit=crop",
+  "email": "alessandro.petrucci@example.com",
+  "phone": "+39 345 123 4567",
+  "dateOfBirth": "1995-06-15",
+  "city": "Roma",
+  "country": "Italia",
+  "bio": "Amo la musica, le feste e uno stile di vita attivo. Sempre aperto a nuove conoscenze ed esperienze!",
+  "hobbies": [
+    {
+      "id": 1,
+      "name": "Ballo",
+      "icon": "💃",
+      "description": "Ballo latino e moderno"
+    },
+    {
+      "id": 2,
+      "name": "Musica",
+      "icon": "🎵",
+      "description": "Musica elettronica, house, techno"
+    },
+    {
+      "id": 3,
+      "name": "Fotografia",
+      "icon": "📸",
+      "description": "Fotografia di eventi e feste"
+    },
+    {
+      "id": 4,
+      "name": "Viaggi",
+      "icon": "✈️",
+      "description": "Esplorare nuove città e culture"
+    },
+    {
+      "id": 5,
+      "name": "Sport",
+      "icon": "🏋️",
+      "description": "Fitness e attività all'aperto"
+    }
+  ],
+  "interests": [
+    "Musica elettronica",
+    "Vita notturna",
+    "Fotografia",
+    "Viaggi",
+    "Fitness",
+    "Cucina",
+    "Cinema",
+    "Libri"
+  ],
+  "favoriteMusic": [
+    "House",
+    "Techno",
+    "Deep House",
+    "Progressive House"
+  ],
+  "favoritePlaces": [
+    {
+      "id": 1,
+      "name": "Discoteca 'Arena'",
+      "type": "Discoteca",
+      "address": "Via del Corso, 1, Roma",
+      "photo": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Villa Borghese",
+      "type": "Parco",
+      "address": "Piazzale Napoleone I, Roma",
+      "photo": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Ristorante 'Trattoria'",
+      "type": "Ristorante",
+      "address": "Via dei Fori Imperiali, 42, Roma",
+      "photo": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=400&fit=crop",
+      "description": "Festa in discoteca",
+      "uploadDate": "2024-01-10T20:00:00Z"
+    },
+    {
+      "id": 2,
+      "url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=400&h=400&fit=crop",
+      "description": "Concerto all'aperto",
+      "uploadDate": "2024-01-05T18:00:00Z"
+    },
+    {
+      "id": 3,
+      "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=400&fit=crop",
+      "description": "Festival di musica elettronica",
+      "uploadDate": "2023-12-28T19:00:00Z"
+    },
+    {
+      "id": 4,
+      "url": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=400&h=400&fit=crop",
+      "description": "Con gli amici alla festa",
+      "uploadDate": "2023-12-20T21:00:00Z"
+    },
+    {
+      "id": 5,
+      "url": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400&h=400&fit=crop",
+      "description": "DJ set",
+      "uploadDate": "2023-12-15T22:00:00Z"
+    },
+    {
+      "id": 6,
+      "url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400&h=400&fit=crop",
+      "description": "Spettacolo di luci",
+      "uploadDate": "2023-12-10T20:30:00Z"
+    }
+  ],
+  "work": {
+    "company": "Soluzioni IT",
+    "position": "Sviluppatore Frontend",
+    "location": "Roma"
+  },
+  "education": {
+    "university": "Università La Sapienza",
+    "faculty": "Informatica",
+    "graduationYear": 2017
+  },
+  "relationshipStatus": "Non specificato",
+  "languages": [
+    "Italiano",
+    "Inglese",
+    "Spagnolo"
+  ],
+  "joinedDate": "2023-01-15",
+  "lastActive": "2024-01-15T20:30:00Z"
+}
+

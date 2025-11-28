@@ -1,0 +1,70 @@
+:root {
+  --app-color-background: #141414;
+  --app-color-text: #dedede;
+
+  /* Orange colors */
+  --app-color-orange-100: rgb(255, 110, 31);
+  --app-color-orange-90: rgb(222, 97, 36);
+  --app-color-orange-80: rgb(189, 85, 40);
+  --app-color-orange-70: rgb(157, 72, 43);
+  --app-color-orange-60: rgb(115, 60, 44);
+  --app-color-orange-50: rgb(80, 47, 44);
+  --app-color-orange-40: rgb(80, 47, 44);
+  --app-color-orange-30: rgb(80, 47, 44);
+  --app-color-orange-20: rgb(80, 47, 44);
+  --app-color-orange-10: rgb(80, 47, 44);
+
+  /* Blue colors */
+  --app-color-blue-100: rgb(31, 110, 255);
+  --app-color-blue-90: rgb(29, 97, 222);
+  --app-color-blue-80: rgb(27, 85, 188);
+  --app-color-blue-70: rgb(26, 72, 154);
+  --app-color-blue-60: rgb(24, 60, 117);
+  --app-color-blue-50: rgb(23, 47, 80);
+  --app-color-blue-40: rgb(23, 47, 80);
+  --app-color-blue-30: rgb(23, 47, 80);
+  --app-color-blue-20: rgb(23, 47, 80);
+  --app-color-blue-10: rgb(23, 47, 80);
+
+  /* Red colors */
+  --app-color-red-100: rgb(255, 31, 31);
+  --app-color-red-90: rgb(222, 28, 31);
+  --app-color-red-80: rgb(188, 26, 30);
+  --app-color-red-70: rgb(154, 23, 29);
+  --app-color-red-60: rgb(117, 20, 25);
+  --app-color-red-50: rgb(80, 19, 19);
+  --app-color-red-40: rgb(80, 19, 19);
+  --app-color-red-30: rgb(80, 19, 19);
+  --app-color-red-20: rgb(80, 19, 19);
+  --app-color-red-10: rgb(80, 19, 19);
+
+  /* Purple colors */
+  --app-color-purple-100: rgb(149, 0, 255);
+  --app-color-purple-90: rgb(129, 0, 222);
+  --app-color-purple-80: rgb(109, 0, 188);
+  --app-color-purple-70: rgb(89, 0, 154);
+  --app-color-purple-60: rgb(70, 0, 120);
+  --app-color-purple-50: rgb(51, 0, 85);
+  --app-color-purple-40: rgb(40, 0, 68);
+  --app-color-purple-30: rgb(32, 0, 51);
+  --app-color-purple-20: rgb(24, 0, 36);
+  --app-color-purple-10: rgb(16, 0, 24);
+
+  /* Gray colors */
+  --app-color-gray-110: rgb(142, 142, 142);
+  --app-color-gray-100: rgb(80, 80, 80);
+  --app-color-gray-90: rgb(64, 64, 64);
+  --app-color-gray-80: rgb(48, 48, 48);
+  --app-color-gray-70: rgb(38, 38, 38);
+  --app-color-gray-60: rgb(30, 30, 30);
+  --app-color-gray-50: rgb(24, 24, 24);
+  --app-color-gray-40: rgb(19, 19, 19);
+  --app-color-gray-30: rgb(16, 16, 16);
+  --app-color-gray-20: rgb(12, 12, 12);
+  --app-color-gray-10: rgb(6, 6, 6);
+
+  --app-background-gradient-gray: linear-gradient(135deg, #39393947, #94949475);
+  --app-background-gradient-gray-hover: linear-gradient(135deg, #1c1b1b47, #57575775);
+  --app-background-gradient-purple: linear-gradient(135deg, #3939396b, #9d00ff75);
+  --app-background-gradient-purple-hover: linear-gradient(135deg, #1b1b1b6b, #5d079275);
+}

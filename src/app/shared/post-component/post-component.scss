@@ -1,0 +1,26 @@
+:host {
+    --app-post-background-color: var(--app-color-gray-10);
+    --app-post-padding: var(--app-spacing-lg);
+    --app-post-border-radius: var(--app-radius-md);
+    --app-post-margin: var(--app-spacing-0);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: var(--app-spacing-md);
+  box-sizing: border-box;
+  inline-size: 100%;
+  border-radius: var(--app-post-border-radius);
+  margin: var(--app-post-margin);
+  background-color: var(--app-post-background-color);
+  padding: var(--app-post-padding);
+
+  .post-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--app-post-padding);
+    align-items: center;
+    margin-top: var(--app-spacing-md);
+  }
+}

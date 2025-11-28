@@ -1,0 +1,88 @@
+@import 'variables.css';
+
+:host:has([data-type='create-post']) {
+  --app-button-inline-size: 90%;
+  grid-row: var(--app-profile-card-ng-grid-row-position);
+  grid-column: var(--app-profile-card-ng-grid-column-position);
+
+  [data-type='create-post'] {
+    --app-button-background-color: var(--app-color-gray-10);
+    --app-button-border-radius: var(--app-radius-md);
+    --app-button-border: 1px solid var(--app-color-gray-100);
+    --app-button-padding: var(--app-spacing-sm);
+    --app-button-transition: all 0.2s ease, transform 0.1s ease;
+    --app-button-inline-size: 100%;
+    --app-button-text-align: left;
+    --app-button-font-family: var(--app-font-family-monospace);
+    --app-button-font-size: var(--app-font-size-xs);
+    --app-button-font-weight: var(--app-font-weight-regular);
+
+    &:hover {
+      --app-button-background-color: var(--app-color-gray-20);
+      --app-button-text-color: var(--app-color-gray-110);
+    }
+  }
+}
+:host:has([data-type='logoGoHome']) {
+  /* --app-button-inline-size: 90%;
+  grid-row: var(--app-profile-card-ng-grid-row-position);
+  grid-column: var(--app-profile-card-ng-grid-column-position); */
+
+  [data-type='logoGoHome'] {
+    /* --app-button-background-color: var(--app-color-gray-10); */
+    /* --app-button-border-radius: var(--app-radius-md); */
+    /* --app-button-border: 1px solid var(--app-color-gray-100); */
+    --app-button-padding: var(--app-spacing-xs);
+    --app-button-transition: all 0.2s ease, transform 0.1s ease;
+    /* --app-button-inline-size: 100%; */
+    --app-button-text-align: center;
+    --app-button-font-family: var(--app-font-family-monospace);
+    --app-button-font-size: var(--app-font-size-xxl);
+    --app-button-font-weight: var(--app-font-weight-bold);
+    --app-button-text-color: var(--app-color-purple-80);
+    text-shadow: var(--app-color-purple-70) 5px 5px 15px;
+  }
+}
+
+footer .actions {
+  :host:has([data-type]) {
+    --app-button-border: 1px solid var(--app-color-gray-70);
+    --app-button-padding: var(--app-spacing-xxs) var(--app-spacing-lg);
+    --app-button-blur: blur(2px);
+    --app-button-background-color: var(--app-background-gradient-gray);
+    &:hover {
+      .btn {
+        --app-button-background-color: var(--app-background-gradient-gray-hover);
+        /* --app-button-text-color: var(--app-color-text); */
+      }
+    }
+  }
+
+  :host:has([data-type='launch-new']) {
+    /* --app-button-blur: blur(4px); */
+    --app-button-border: 1px solid var(--app-color-purple-70);
+    --app-button-padding: var(--app-spacing-xs) var(--app-spacing-xxl);
+    --app-button-background-color: var(--app-background-gradient-purple);
+    &:hover {
+      .btn {
+        --app-button-background-color: var(--app-background-gradient-purple-hover);
+      }
+    }
+  }
+}
+
+:host:has(:is([data-type='create-post-launch'], [data-type='create-event-launch'])) {
+  /* --app-button-blur: blur(4px); */
+  --app-button-border: 1px solid var(--app-color-gray-20);
+  --app-button-padding: var(--app-spacing-lg) var(--app-spacing-xxl);
+  --app-button-inline-size: 100%;
+  max-width: 200px;
+  /* --app-button-background-color: linear-gradient(135deg, #39393947, #94949475); */
+  --app-button-background-color: var(--app-color-gray-20);
+  --app-button-text-color: var(--app-color-text);
+  &:hover {
+    .btn {
+      --app-button-background-color: var(--app-color-gray-20);
+    }
+  }
+}

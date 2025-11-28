@@ -1,0 +1,14 @@
+<div class="post">
+  <div class="post-header">
+    <app-profile-card [user]="post"></app-profile-card>
+  </div>
+  <p>{{ post.text }}</p>
+  <div class="post-footer">
+    <app-button text="Like" dataType="like" (click)="likePost()"></app-button>
+    <app-button text="Share" dataType="share" (click)="sharePost()"></app-button>
+    <app-button text="Comments" dataType="comments" (click)="commentsToggle()"></app-button>
+  </div>
+  @if (commentsVisible) {
+  <app-comment-component [postId]="post.id"></app-comment-component>
+  }
+</div>

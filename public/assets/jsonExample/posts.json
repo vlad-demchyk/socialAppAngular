@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "authorId": 1,
+    "userName": "Alessandro Petrucci",
+    "profilePhoto": "https://i.pravatar.cc/150?img=1",
+    "publicationDate": "2024-01-15T18:30:00Z",
+    "text": "Festa fantastica ieri! La musica era al top, l'atmosfera incredibile. Ho incontrato tante persone interessanti e ho passato un tempo semplicemente fantastico. Tornerò sicuramente! 🎉",
+    "likes": 45,
+    "shares": 12
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "authorId": 2,
+    "userName": "Maria Romano",
+    "profilePhoto": "https://i.pravatar.cc/150?img=2",
+    "publicationDate": "2024-01-14T20:15:00Z",
+    "text": "Prima volta a una festa del genere e non riuscivo a credere quanto tutto fosse organizzato! I DJ suonavano i migliori brani, il bar funzionava perfettamente. Le impressioni sono state le migliori! 🔥",
+    "likes": 67,
+    "shares": 23
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "authorId": 3,
+    "userName": "Domenico Bianchi",
+    "profilePhoto": "https://i.pravatar.cc/150?img=3",
+    "publicationDate": "2024-01-13T22:00:00Z",
+    "text": "La festa è stata semplicemente una bomba! Abbiamo ballato fino all'alba, abbiamo incontrato vecchi amici e ne abbiamo trovati di nuovi. Gli organizzatori sono fantastici - tutto era al top! Lo consiglio a tutti! 💃🕺",
+    "likes": 89,
+    "shares": 34
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "authorId": 1,
+    "userName": "Alessandro Petrucci",
+    "profilePhoto": "https://i.pravatar.cc/150?img=1",
+    "publicationDate": "2024-01-12T19:45:00Z",
+    "text": "Un'altra festa indimenticabile! Questa volta c'erano particolarmente tante persone, ma questo ha solo aggiunto energia. Musica, persone, atmosfera - tutto perfetto! 🎵✨",
+    "likes": 56,
+    "shares": 18
+  },
+  {
+    "id": 5,
+    "userId": 4,
+    "authorId": 4,
+    "userName": "Irene Santoro",
+    "profilePhoto": "https://i.pravatar.cc/150?img=4",
+    "publicationDate": "2024-01-11T21:30:00Z",
+    "text": "Non mi aspettavo che sarebbe stato così figo! La festa ha superato tutte le mie aspettative. Mi è piaciuta particolarmente la musica dal vivo e lo spettacolo di luci. Ci andrò sicuramente di nuovo! 🌟",
+    "likes": 72,
+    "shares": 28
+  },
+  {
+    "id": 6,
+    "userId": 5,
+    "authorId": 5,
+    "userName": "Oleg Ferrari",
+    "profilePhoto": "https://i.pravatar.cc/150?img=5",
+    "publicationDate": "2024-01-10T23:00:00Z",
+    "text": "La migliore festa di questo mese! Ho passato il tempo con i migliori amici, abbiamo ballato tutta la notte. L'organizzazione è al top, tutto è stato molto professionale. Grazie per le emozioni indimenticabili! 🎊",
+    "likes": 94,
+    "shares": 41
+  },
+  {
+    "id": 7,
+    "userId": 2,
+    "authorId": 2,
+    "userName": "Maria Romano",
+    "profilePhoto": "https://i.pravatar.cc/150?img=2",
+    "publicationDate": "2024-01-09T18:00:00Z",
+    "text": "La festa è stata semplicemente incredibile! Mi è piaciuto particolarmente che ci fosse molta musica varia - dall'elettronica al rock. Ognuno ha trovato qualcosa per sé! 🎸🎹",
+    "likes": 51,
+    "shares": 15
+  },
+  {
+    "id": 8,
+    "userId": 6,
+    "authorId": 6,
+    "userName": "Andrea Bondi",
+    "profilePhoto": "https://i.pravatar.cc/150?img=6",
+    "publicationDate": "2024-01-08T20:30:00Z",
+    "text": "Prima volta a una festa così grande e non sono rimasto deluso! Tutto è stato organizzato al massimo livello. Sto già aspettando il prossimo evento! 🚀",
+    "likes": 38,
+    "shares": 9
+  }
+]

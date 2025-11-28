@@ -1,0 +1,39 @@
+:host {
+  --app-launch-component-z-index: 300;
+  --app-launch-component-background-color: var(--app-color-gray-20);
+  --app-launch-component-padding: calc(var(--app-spacing-xxl) * 2);
+  --app-launch-component-border-radius: var(--app-radius-lg);
+  --app-launch-component-border: 1px solid var(--app-color-gray-40);
+  --app-launch-component-transition: all 0.6s ease-in-out;
+  
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: var(--app-launch-component-transition);
+  z-index: var(--app-launch-component-z-index);
+}
+
+.launch-options {
+  border: var(--app-launch-component-border);
+  border-radius: var(--app-launch-component-border-radius);
+  padding: var(--app-launch-component-padding);
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  background: linear-gradient(135deg, #39393947, #949494a5);
+  margin: 0 auto;
+  display: flex;
+  gap: var(--app-spacing-sm);
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+:host([active='true']) {
+  transform: translateY(-130%);
+  visibility: visible;
+  transition: var(--app-launch-component-transition);
+}

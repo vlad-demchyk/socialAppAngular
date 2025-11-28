@@ -1,0 +1,6 @@
+@if (modalOpen$ | async) {
+<span class="launch-options" (appClickOutside)="onOutsideClick()">
+  <app-button text="Create post" dataType="create-post-launch"></app-button>
+  <app-button text="Create event" dataType="create-event-launch"></app-button>
+</span>
+}

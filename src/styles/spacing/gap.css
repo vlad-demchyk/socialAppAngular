@@ -1,0 +1,10 @@
+:root {
+  --app-spacing-0: 0rem;
+  --app-spacing-xxs: 0.25rem;
+  --app-spacing-xs: 0.5rem;
+  --app-spacing-sm: 0.75rem;
+  --app-spacing-md: 1rem;
+  --app-spacing-lg: 1.25rem;
+  --app-spacing-xl: 1.5rem;
+  --app-spacing-xxl: 1.75rem;
+}

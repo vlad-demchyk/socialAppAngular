@@ -1,0 +1,184 @@
+[
+  {
+    "id": 1,
+    "postId": 1,
+    "userId": 2,
+    "userName": "Maria Romano",
+    "profilePhoto": "https://i.pravatar.cc/150?img=2",
+    "text": "Totalmente d'accordo! C'ero anch'io, l'atmosfera era davvero incredibile!",
+    "publicationDate": "2024-01-15T19:00:00Z",
+    "likes": 12,
+    "replies": [
+      {
+        "id": 11,
+        "commentId": 1,
+        "userId": 1,
+        "userName": "Alessandro Petrucci",
+        "profilePhoto": "https://i.pravatar.cc/150?img=1",
+        "text": "Grazie! Sono contento che ti sia piaciuto anche a te!",
+        "publicationDate": "2024-01-15T19:15:00Z",
+        "likes": 5,
+        "isAuthorReply": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "postId": 1,
+    "userId": 3,
+    "userName": "Domenico Bianchi",
+    "profilePhoto": "https://i.pravatar.cc/150?img=3",
+    "text": "Sembra che mi sia perso qualcosa di figo! La prossima volta ci andrò sicuramente!",
+    "publicationDate": "2024-01-15T19:30:00Z",
+    "likes": 8,
+    "replies": []
+  },
+  {
+    "id": 3,
+    "postId": 2,
+    "userId": 1,
+    "userName": "Alessandro Petrucci",
+    "profilePhoto": "https://i.pravatar.cc/150?img=1",
+    "text": "Sì, l'organizzazione era davvero al top! I DJ sono stati una bomba!",
+    "publicationDate": "2024-01-14T21:00:00Z",
+    "likes": 15,
+    "replies": [
+      {
+        "id": 12,
+        "commentId": 3,
+        "userId": 2,
+        "userName": "Maria Romano",
+        "profilePhoto": "https://i.pravatar.cc/150?img=2",
+        "text": "Grazie per il supporto! Sono contenta che ti sia piaciuto!",
+        "publicationDate": "2024-01-14T21:20:00Z",
+        "likes": 7,
+        "isAuthorReply": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "postId": 2,
+    "userId": 4,
+    "userName": "Anna Rossi",
+    "profilePhoto": "https://i.pravatar.cc/150?img=4",
+    "text": "C'ero anch'io! Il bar funzionava davvero perfettamente, i cocktail erano deliziosi!",
+    "publicationDate": "2024-01-14T21:45:00Z",
+    "likes": 10,
+    "replies": []
+  },
+  {
+    "id": 5,
+    "postId": 3,
+    "userId": 1,
+    "userName": "Alessandro Petrucci",
+    "profilePhoto": "https://i.pravatar.cc/150?img=1",
+    "text": "Sì, gli organizzatori sono davvero fantastici! Tutto era al massimo livello!",
+    "publicationDate": "2024-01-13T23:30:00Z",
+    "likes": 20,
+    "replies": [
+      {
+        "id": 13,
+        "commentId": 5,
+        "userId": 3,
+        "userName": "Domenico Bianchi",
+        "profilePhoto": "https://i.pravatar.cc/150?img=3",
+        "text": "Grazie per le parole gentili! Sono contento che ti sia piaciuto!",
+        "publicationDate": "2024-01-14T00:00:00Z",
+        "likes": 9,
+        "isAuthorReply": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "postId": 3,
+    "userId": 5,
+    "userName": "Vittorio Ferrari",
+    "profilePhoto": "https://i.pravatar.cc/150?img=5",
+    "text": "Abbiamo ballato fino all'alba - è vero! Le gambe fanno ancora male, ma ne vale la pena! 😄",
+    "publicationDate": "2024-01-14T01:00:00Z",
+    "likes": 18,
+    "replies": []
+  },
+  {
+    "id": 7,
+    "postId": 4,
+    "userId": 2,
+    "userName": "Maria Romano",
+    "profilePhoto": "https://i.pravatar.cc/150?img=2",
+    "text": "Ti ho visto lì! C'erano davvero tante persone, ma questo ha solo aggiunto energia!",
+    "publicationDate": "2024-01-12T20:30:00Z",
+    "likes": 14,
+    "replies": [
+      {
+        "id": 14,
+        "commentId": 7,
+        "userId": 1,
+        "userName": "Alessandro Petrucci",
+        "profilePhoto": "https://i.pravatar.cc/150?img=1",
+        "text": "Sì, ti ho visto anch'io! La prossima volta ci incontreremo sicuramente!",
+        "publicationDate": "2024-01-12T21:00:00Z",
+        "likes": 6,
+        "isAuthorReply": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "postId": 5,
+    "userId": 1,
+    "userName": "Alessandro Petrucci",
+    "profilePhoto": "https://i.pravatar.cc/150?img=1",
+    "text": "Lo spettacolo di luci è stato semplicemente incredibile! Mi è piaciuta particolarmente la parte finale!",
+    "publicationDate": "2024-01-11T22:15:00Z",
+    "likes": 22,
+    "replies": [
+      {
+        "id": 15,
+        "commentId": 8,
+        "userId": 4,
+        "userName": "Anna Rossi",
+        "profilePhoto": "https://i.pravatar.cc/150?img=4",
+        "text": "Grazie! Sono contenta che ti sia piaciuto lo spettacolo di luci!",
+        "publicationDate": "2024-01-11T22:45:00Z",
+        "likes": 11,
+        "isAuthorReply": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "postId": 6,
+    "userId": 3,
+    "userName": "Domenico Bianchi",
+    "profilePhoto": "https://i.pravatar.cc/150?img=3",
+    "text": "C'ero anch'io! Davvero la migliore festa di questo mese! L'organizzazione è al top!",
+    "publicationDate": "2024-01-10T23:45:00Z",
+    "likes": 16,
+    "replies": []
+  },
+  {
+    "id": 10,
+    "postId": 7,
+    "userId": 6,
+    "userName": "Elena Conti",
+    "profilePhoto": "https://i.pravatar.cc/150?img=6",
+    "text": "La varietà della musica - questo è quello che mi è piaciuto di più!",
+    "publicationDate": "2024-01-09T19:00:00Z",
+    "likes": 13,
+    "replies": [
+      {
+        "id": 16,
+        "commentId": 10,
+        "userId": 2,
+        "userName": "Maria Romano",
+        "profilePhoto": "https://i.pravatar.cc/150?img=2",
+        "text": "Grazie! Proprio questo è quello che speravamo - che ognuno trovasse qualcosa per sé!",
+        "publicationDate": "2024-01-09T19:30:00Z",
+        "likes": 8,
+        "isAuthorReply": true
+      }
+    ]
+  }
+]

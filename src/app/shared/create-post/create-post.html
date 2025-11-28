@@ -1,0 +1,11 @@
+<section (appClickOutside)="onOutsideClick()" class="modal-window">
+  <header>
+    <app-button dataType="close" (click)="onClose()">Закрити</app-button>
+    <h3>New post</h3>
+  </header>
+  <app-profile-card [user]="me" class="small">
+    <app-input-component placeholder="What's on your mind?"></app-input-component>
+    <!-- <app-button text="Post" dataType="submit-post" (click)="onSubmitPost()"></app-button> -->
+  </app-profile-card>
+  <footer></footer>
+</section>
