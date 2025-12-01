@@ -19,3 +19,7 @@ html {
   overflow: hidden;
   overscroll-behavior-y: contain;
 }
+
+button, a{
+  -webkit-tap-highlight-color: transparent;
+}

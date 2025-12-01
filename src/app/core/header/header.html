@@ -2,11 +2,13 @@
 
 <header class="header">
   <div class="header-container">
-    <app-button text="Notifications" dataType="notifications"></app-button>
-    <app-button [text]="title" dataType="logoGoHome">
-      {{ title }}
-    </app-button>
-    <app-button text="Burger Menu" dataType="burger-menu"></app-button>
+    <app-button text="search" dataType="search"></app-button>
+
+    <span>
+      <app-button text="myLikes" dataType="heart"></app-button>
+
+      <app-button text="Burger Menu" dataType="burger-menu"></app-button>
+    </span>
   </div>
 </header>
 

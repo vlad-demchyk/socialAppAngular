@@ -1,6 +1,6 @@
 :host {
   --app-comments-background-color: var(--app-color-gray-50);
-  --app-comments-padding: var(--app-spacing-lg);
+  --app-comments-padding: var(--app-spacing-md);
   --app-comments-border-radius: var(--app-radius-md);
   --app-comments-margin: var(--app-spacing-0);
   --app-comments-spacing: var(--app-spacing-md);
@@ -40,7 +40,7 @@
 
     .comment-footer {
       display: flex;
-      justify-content: flex-start;
+      justify-content: flex-end;
       gap: var(--app-comments-spacing);
       align-items: center;
     }

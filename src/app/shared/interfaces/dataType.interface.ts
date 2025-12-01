@@ -24,6 +24,6 @@ export type DataType =
   | 'next-event'
   | 'heart'
   | 'close'
-  | 'logoGoHome'
+  | 'go-home'
   | 'showMore'
   | 'search';

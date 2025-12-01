@@ -1,5 +1,5 @@
 @if (profile) {
-<section class="content">
+<section class="profile-page">
   <pill-wrapper>
     {{ profile.nickName }}
   </pill-wrapper>
@@ -18,52 +18,54 @@
         <pill-wrapper>
           {{ profile.bio }}
         </pill-wrapper>
-        showMore
+        <span status></span>
       </summary>
-      <span contacts>
-        <h6>contacts:</h6>
-        <pill-wrapper>{{ profile.email }}, {{ profile.phone }}</pill-wrapper>
-      </span>
-      <span hobbies>
-        <h6>hobbies:</h6>
-        @for (hobby of profile.hobbies; track $index) {
-        <pill-wrapper>{{ hobby.name }}</pill-wrapper>
-        }
-      </span>
-      <span work>
-        <h6>work:</h6>
-        <pill-wrapper>
-          {{ profile.work.position }}, {{ profile.work.company }}, {{ profile.work.location }}
-        </pill-wrapper>
-      </span>
-      <span education>
-        <h6>education:</h6>
-        <pill-wrapper>
-          {{ profile.education.faculty }}, {{ profile.education.university }},
-          {{ profile.education.graduationYear }}
-        </pill-wrapper>
-      </span>
+      <section content>
+        <span contacts>
+          <h6>contacts:</h6>
+          <pill-wrapper>{{ profile.email }}, {{ profile.phone }}</pill-wrapper>
+        </span>
+        <span hobbies>
+          <h6>hobbies:</h6>
+          @for (hobby of profile.hobbies; track $index) {
+          <pill-wrapper>{{ hobby.name }}</pill-wrapper>
+          }
+        </span>
+        <span work>
+          <h6>work:</h6>
+          <pill-wrapper>
+            {{ profile.work.position }}, {{ profile.work.company }}, {{ profile.work.location }}
+          </pill-wrapper>
+        </span>
+        <span education>
+          <h6>education:</h6>
+          <pill-wrapper>
+            {{ profile.education.faculty }}, {{ profile.education.university }},
+            {{ profile.education.graduationYear }}
+          </pill-wrapper>
+        </span>
 
-      <span interests>
-        <h6>interests:</h6>
-        @for (item of profile.interests; track $index) {
-        <pill-wrapper>{{ item }}</pill-wrapper>
-        }
-      </span>
+        <span interests>
+          <h6>interests:</h6>
+          @for (item of profile.interests; track $index) {
+          <pill-wrapper>{{ item }}</pill-wrapper>
+          }
+        </span>
 
-      <span favoriteMusic>
-        <h6>favorite Music:</h6>
-        @for (favoriteMusic of profile.favoriteMusic; track $index) {
-        <pill-wrapper>{{ favoriteMusic }}</pill-wrapper>
-        }
-      </span>
+        <span favoriteMusic>
+          <h6>favorite Music:</h6>
+          @for (favoriteMusic of profile.favoriteMusic; track $index) {
+          <pill-wrapper>{{ favoriteMusic }}</pill-wrapper>
+          }
+        </span>
 
-      <span favoritePlace>
-        <h6>favorite Place:</h6>
-        @for (favoritePlace of profile.favoritePlaces; track $index) {
-        <pill-wrapper>{{ favoritePlace.name }}</pill-wrapper>
-        }
-      </span>
+        <span favoritePlace>
+          <h6>favorite Place:</h6>
+          @for (favoritePlace of profile.favoritePlaces; track $index) {
+          <pill-wrapper>{{ favoritePlace.name }}</pill-wrapper>
+          }
+        </span>
+      </section>
     </details>
   </main>
   <footer>

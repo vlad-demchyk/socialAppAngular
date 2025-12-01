@@ -1,7 +1,7 @@
 :host {
   --app-footer-background-color: var(--app-color-gray-50);
   --app-footer-text-color: var(--app-color-gray-90);
-  --app-footer-padding: var(--app-spacing-md) var(--app-spacing-xs);
+  --app-footer-padding: var(--app-spacing-xs) var(--app-spacing-xs) var(--app-spacing-lg);
   --app-footer-filter: drop-shadow(0 -44px 30px rgb(0, 0, 0));
 }
 
@@ -9,6 +9,19 @@
   inline-size: 100vw;
   box-sizing: border-box;
   position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: var(--app-footer-filter);
+    pointer-events: none;
+    background-color: var(--app-color-background);
+    z-index: 0;
+  }
 }
 
 .actions {
@@ -16,16 +29,12 @@
   padding: var(--app-footer-padding);
   position: absolute;
   top: -100%;
-  left: 0;
-  inline-size: 100vw;
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--app-spacing-xs);
   align-items: end;
-  justify-content: center;
-  justify-items: center;
-  flex-direction: row;
-  gap: 1rem;
-  z-index: 100;
+  z-index: 1;
 }
 
 menu {
@@ -40,5 +49,6 @@ menu {
   justify-content: center;
   justify-items: center;
   align-content: center;
-  filter: var(--app-footer-filter);
+  position: relative;
+  z-index: 1;
 }

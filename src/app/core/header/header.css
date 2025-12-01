@@ -3,7 +3,7 @@
 
   --app-header-text-color: var(--app-color-purple-90);
 
-  --app-header-padding: var(--app-spacing-md);
+  --app-header-padding: calc(var(--app-spacing-lg) *2 ) var(--app-spacing-md) var(--app-spacing-xs);
   --app-header-margin: var(--app-spacing-0);
   --app-header-z-index: 300;
 
@@ -15,8 +15,21 @@
   margin: var(--app-header-margin);
   padding: var(--app-header-padding);
   z-index: var(--app-header-z-index);
-  filter: var(--app-header-filter);
+  /* filter: var(--app-header-filter); */
   position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: var(--app-header-filter);
+    pointer-events: none;
+    background-color: var(--app-color-background);
+    z-index: -1;
+  }
 }
 
 .header-container {
@@ -25,4 +38,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  span {
+    margin: 0;
+  }
 }

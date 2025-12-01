@@ -17,7 +17,7 @@ export class ButtonController {
       case 'filter':
         this.onFilter();
         break;
-      case 'logoGoHome':
+      case 'go-home':
         this.onHome();
         break;
 

@@ -11,7 +11,7 @@
   display: block;
 }
 
-.content {
+.profile-page {
   display: flex;
   flex-direction: column;
   gap: var(--app-spacing-xxl);
@@ -45,19 +45,40 @@
       }
     }
 
-    // [aboutme] {
-    //   // .showless {
-    //   //   overflow: hidden;
-    //   //   display: -webkit-box;
-    //   //   -webkit-box-orient: vertical;
-    //   //   -webkit-line-clamp: 4;
-    //   // }
-    // }
     details {
       summary {
         display: flex;
+        gap: var(--app-spacing-xs);
         // flex-wrap: wrap;
         flex-direction: column;
+      }
+      [content] {
+        transition: var(--app-profile-transition);
+
+        span {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--app-spacing-xxs);
+        }
+      }
+
+      &:not(:has([open])) {
+        [status]::after {
+          content: 'Show more';
+        }
+        [content] {
+          height: 0;
+          overflow: hidden;
+        }
+      }
+      &[open] {
+        [status]::after {
+          content: 'Show less';
+        }
+        [content] {
+          padding-top: var(--app-spacing-md);
+          height: fit-content;
+        }
       }
     }
   }

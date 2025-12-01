@@ -24,6 +24,7 @@ export class Button {
     search: '/assets/icons/search.svg',
     close: '/assets/icons/close-circle.svg',
     heart: '/assets/icons/heart.svg',
+    'go-home': '/assets/icons/home.svg',
     'launch-new': '/assets/icons/plus.svg',
     'burger-menu': '/assets/icons/burger.svg',
     'next-event': '/assets/icons/calendar.svg',
