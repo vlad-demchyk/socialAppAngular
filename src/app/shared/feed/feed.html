@@ -1,0 +1,16 @@
+<div class="tabset">
+  <app-button text="Feed" dataType="feed" (click)="switchTab('feed')"></app-button>
+  <app-button text="Look Book" dataType="look-book" (click)="switchTab('look-book')"></app-button>
+</div>
+@if (selectedTab === 'feed') {
+<section class="posts">
+  @for (post of posts; track post.publicationDate) {
+  <app-post-component [key]="`post-${post.id}-${post.publicationDate}`" [post]="post">
+  </app-post-component>
+  } @empty {
+  <p>Loading...</p>
+  }
+</section>
+} @else if (selectedTab === 'look-book') {
+<app-look-book [userId]="userId"></app-look-book>
+}

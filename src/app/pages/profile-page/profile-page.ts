@@ -4,15 +4,14 @@ import { switchMap } from 'rxjs/operators';
 import { UserService } from '../../core/services/userService';
 import { of } from 'rxjs';
 import { UserDetails } from '../../shared/interfaces/user-details.interface';
-import { Button } from '../../shared/button/button';
 import { PillWrapperComponent } from '../../shared/pill-wrapper-component/pill-wrapper-component';
-// import { AsyncPipe } from '@angular/common';
+import { Feed } from '../../shared/feed/feed';
 import { AboutModalService } from '../../core/services/aboutProfile-modal-service';
 @Component({
   selector: 'app-profile-page',
   imports: [
-    Button,
     PillWrapperComponent,
+    Feed,
     //  AsyncPipe
   ],
   templateUrl: './profile-page.html',

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Post, Comment } from '../interfaces/post';
+import { Post } from '../interfaces/post';
 import { CommentComponent } from '../comment-component/comment-component';
 import { Button } from '../button/button';
 import { ProfileCard } from '../profile-card/profile-card';
@@ -12,8 +12,8 @@ import { ProfileCard } from '../profile-card/profile-card';
   styleUrl: './post-component.scss',
 })
 export class PostComponent {
+  @Input() key!: string;
   @Input() post!: Post; 
-  @Input() comments: Comment[] = [];
 
   commentsVisible = false;
 
@@ -24,10 +24,7 @@ export class PostComponent {
   sharePost() {
     console.log(`Share post`);
   }
-  
-  addComment(comment: Comment) {
-    console.log(`Add comment`);
-  }
+
 
   commentsToggle() {
     this.commentsVisible = !this.commentsVisible;

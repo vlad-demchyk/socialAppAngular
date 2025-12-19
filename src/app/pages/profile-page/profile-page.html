@@ -69,13 +69,14 @@
     </details>
   </main>
   <footer>
-    <app-button text="Posts"></app-button>
+    <app-feed [userId]="profile.userId"></app-feed>
+    <!-- <app-button text="Posts"></app-button>
     <app-button text="Gallery"></app-button>
     <div gallery>
       @for (photo of profile.photos; track photo.id) {
       <img [src]="photo.url" alt="" />
       }
-    </div>
+    </div> -->
   </footer>
 </section>
 } @else {

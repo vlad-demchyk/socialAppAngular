@@ -4,6 +4,8 @@ export interface IconMap {
 
 export type DataType =
   | 'filter'
+  | 'feed'
+  | 'look-book'
   | 'launch-new'
   | 'like'
   | 'reply'

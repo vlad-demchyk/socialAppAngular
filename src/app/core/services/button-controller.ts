@@ -20,7 +20,6 @@ export class ButtonController {
       case 'go-home':
         this.onHome();
         break;
-
       case 'like':
         this.onLike();
         break;

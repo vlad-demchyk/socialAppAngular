@@ -82,19 +82,4 @@
       }
     }
   }
-  footer {
-    [gallery] {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      // gap: var(--app-spacing-lg);
-
-      img {
-        inline-size: 100%;
-        block-size: 100%;
-        aspect-ratio: 3/4;
-        object-position: center;
-        object-fit: cover;
-      }
-    }
-  }
 }

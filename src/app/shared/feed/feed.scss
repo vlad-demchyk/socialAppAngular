@@ -1,0 +1,7 @@
+section.posts {
+  display: grid;
+  gap: var(--app-spacing-xl);
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
+}
+
+

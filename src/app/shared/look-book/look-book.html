@@ -1,0 +1,44 @@
+@if (userId) {
+<label [class.active]="lookbookGrid">
+  <input type="checkbox" [checked]="lookbookGrid" (change)="switchLookbookType()" />
+  <span>Grid View</span>
+</label>
+} @if (isLoading) {
+<p>Loading...</p>
+} @else { @if (lookbookGrid) {
+<div gallery-grid>
+  @for (photo of displayPhotos; track photo.id) {
+  <img [src]="photo.photoUrl" [alt]="photo.photoContentText || 'Photo'" />
+  }
+</div>
+} @else {
+<section gallery-feed>
+  @for (photo of displayPhotos; track photo.id) {
+  <article [id]="`photo-${photo.id}-${photo.publicationDate}`">
+    <header>
+      <app-profile-card [user]="photo"></app-profile-card>
+    </header>
+    <body>
+      <figure>
+        <img [src]="photo.photoUrl" [alt]="photo.photoContentText || 'Photo'" />
+      </figure>
+      <figcaption>
+        @if (photo.photoContentText) {
+        <p>{{ photo.photoContentText }}</p>
+        }
+      </figcaption>
+    </body>
+    <footer>
+      <app-button text="Like" dataType="like" (click)="likePhoto(photo)"></app-button>
+      <app-button text="Share" dataType="share" (click)="sharePhoto(photo)"></app-button>
+      <app-button text="Comments" dataType="comments" (click)="commentsToggle(photo)"></app-button>
+    </footer>
+    @if (commentsVisible[photo.id]) {
+    <app-comment-component [postId]="photo.id"></app-comment-component>
+    }
+  </article>
+  } @empty {
+  <p>No photos available</p>
+  }
+</section>
+} }

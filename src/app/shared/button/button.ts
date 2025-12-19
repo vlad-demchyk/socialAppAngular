@@ -28,6 +28,8 @@ export class Button {
     'launch-new': '/assets/icons/plus.svg',
     'burger-menu': '/assets/icons/burger.svg',
     'next-event': '/assets/icons/calendar.svg',
+    // 'feed': '/assets/icons/feed.svg',
+    // 'look-book': '/assets/icons/look-book.svg',
   };
   @Input() text: string = '';
   @Input() dataType: DataType = 'add';
