@@ -1,5 +1,63 @@
 :host {
   --app-look-book-grid-columns: 3;
+  --app-look-book-toggle-background: var(--app-background-gradient-gray);
+  --app-look-book-blur: var(--app-main-blur);
+  --app-look-book-border: 1px solid var(--app-color-gray-40);
+  --app-look-book-border-radius: var(--app-radius-md);
+}
+
+.viewToggle {
+  label {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--app-spacing-xxl);
+
+    border: var(--app-look-book-border);
+    border-radius: var(--app-look-book-border-radius);
+    padding: var(--app-spacing-md) var(--app-spacing-md);
+
+    background: var(--app-look-book-toggle-background);
+    backdrop-filter: var(--app-look-book-blur);
+
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    z-index: 1;
+
+    img {
+      inline-size: 2rem;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      z-index: 2;
+    }
+
+    &::after {
+      content: '';
+      transition: var(--app-main-transition-fast);
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      left: 0;
+
+      inline-size: 100%;
+      block-size: 50%;
+      background: rgba(0, 0, 0, 0.514);
+      backdrop-filter: blur(4px);
+      transform: translateY(100%);
+    }
+
+    &[is-active] {
+      &::after {
+        transform: translateY(0);
+      }
+    }
+  }
 }
 
 [gallery-grid] {

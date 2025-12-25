@@ -1,7 +1,13 @@
+.tabset {
+  display: flex;
+  gap: var(--app-spacing-md);
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: var(--app-spacing-md);
+}
+
 section.posts {
   display: grid;
   gap: var(--app-spacing-xl);
   grid-template-columns: repeat(auto-fill, minmax(min-content, 1fr));
 }
-
-

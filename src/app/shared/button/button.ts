@@ -33,6 +33,7 @@ export class Button {
   };
   @Input() text: string = '';
   @Input() dataType: DataType = 'add';
+  @Input() isActive: boolean = false;
   buttonController = inject(ButtonController);
 
   public get iconUrl(): string | undefined {

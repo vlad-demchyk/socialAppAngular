@@ -1,6 +1,16 @@
 <div class="tabset">
-  <app-button text="Feed" dataType="feed" (click)="switchTab('feed')"></app-button>
-  <app-button text="Look Book" dataType="look-book" (click)="switchTab('look-book')"></app-button>
+  <app-button
+    [isActive]="selectedTab === 'feed'"
+    text="Feed"
+    dataType="feed"
+    (click)="switchTab('feed')"
+  ></app-button>
+  <app-button
+    [isActive]="selectedTab === 'look-book'"
+    text="Gallery"
+    dataType="look-book"
+    (click)="switchTab('look-book')"
+  ></app-button>
 </div>
 @if (selectedTab === 'feed') {
 <section class="posts">

@@ -20,6 +20,10 @@ export class LookBook implements OnInit, OnChanges {
   displayPhotos: Photo[] = [];
   lookbookGrid: boolean = false;
   isLoading: boolean = true;
+  icons = {
+    feed: '/assets/icons/feed.svg',
+    gallery: '/assets/icons/gallery.svg',
+  };
 
   ngOnInit() {
     this.loadPhotos();

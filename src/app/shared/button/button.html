@@ -3,6 +3,7 @@
   aria-label="{{ text }}"
   [type]="dataType === 'submit' ? 'submit' : 'button'"
   [attr.data-type]="dataType"
+  [attr.is-active]="isActive ? '' : null"
   (click)="onClick()"
 >
   @if (iconUrl) {

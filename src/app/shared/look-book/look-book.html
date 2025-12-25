@@ -1,8 +1,11 @@
 @if (userId) {
-<label [class.active]="lookbookGrid">
-  <input type="checkbox" [checked]="lookbookGrid" (change)="switchLookbookType()" />
-  <span>Grid View</span>
-</label>
+<span class="viewToggle">
+  <label [attr.is-active]="lookbookGrid ? '' : null">
+    <input sr-only type="checkbox" [checked]="lookbookGrid" (change)="switchLookbookType()" />
+    <img [src]="icons.feed" />
+    <img [src]="icons.gallery" />
+  </label>
+</span>
 } @if (isLoading) {
 <p>Loading...</p>
 } @else { @if (lookbookGrid) {
