@@ -1,10 +1,10 @@
 :host {
 }
 
-.login-container {
+.sign-container {
   display: flex;
   flex-direction: column;
-  
+
   span {
     display: inline-flex;
     align-items: center;
@@ -12,8 +12,10 @@
     img {
       border-radius: var(--app-radius-md);
     }
-    h4 {
-      margin: 0;
-    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-login-page',
+  selector: 'app-sign-in',
   imports: [RouterLink],
-  templateUrl: './login-page.html',
-  styleUrl: './login-page.scss',
+  templateUrl: './sign-in.html',
+  styleUrl: './sign-in.scss',
 })
-export class LoginPage {
+export class SignIn {
 logoUrl = "/assets/icons/iconX.webp";
+protected = true;
 }

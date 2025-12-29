@@ -18,21 +18,4 @@ export class Layout {
 
   isModalOpen$ = this.createModalService.modalState$;
   isActive: boolean = false;
-
-  // private subscriptions = new Subscription(); // Для безпечного очищення
-  // ngOnInit() {
-  //   this.subscriptions.add(
-  //     this.createModalService.modalActiveState$.subscribe((state) => {
-  //       this.isActive = state;
-  //     })
-  //   );
-  // }
-
-  // ngOnDestroy() {
-  //   this.subscriptions.unsubscribe(); // Очищення підписок при знищенні компонента
-  // }
-  // @HostBinding('class.modal-open')
-  // get isModalActive(): boolean {
-  //   return this.isActive;
-  // }
 }

@@ -1,0 +1,23 @@
+<section class="sign-container">
+  <span>
+    <img [src]="logoUrl" alt="Eventus Logo" width="64" height="64" />
+  </span>
+  <h4>Login</h4>
+  <p>Please login to your account to continue.</p>
+  <form action="">
+    <label for="email">E'mail Address</label>
+    <input type="email" id="email" name="email" required />
+    <label for="password">Password</label>
+    <input [type]="protected ? 'password' : 'text'" id="password" name="password" required />
+    <input type="checkbox" [checked]="protected" (change)="protected = !protected" /> Show Password
+    <button type="submit">Login</button>
+  </form>
+  <a routerLink="/forgot-password">Forgot Password?</a>
+
+  <span class="divider">or</span>
+
+  <button>Continue with Google</button>
+  <button>Continue with Apple</button>
+
+  <span>Don't have an account? <a routerLink="/sign-up">Sign Up</a></span>
+</section>
